@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MyImageViewerClass</class>
+ <widget class="QWidget" name="MyImageViewerClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>929</width>
+    <height>668</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MyImageViewer</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout" rowstretch="0,1">
+   <item row="1" column="0">
+    <widget class="QImageViewer" name="widget" native="true"/>
+   </item>
+   <item row="0" column="0">
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>QImageViewer</class>
+   <extends>QWidget</extends>
+   <header>qimageviewer.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="MyImageViewer.qrc"/>
+ </resources>
+ <connections/>
+</ui>
